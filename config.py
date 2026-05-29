@@ -73,11 +73,8 @@ class Config:
     OLLAMA_TOP_P: float = _parse_float(os.getenv("OLLAMA_TOP_P"), 0.9)
     OLLAMA_NUM_PREDICT: int = _parse_int(os.getenv("OLLAMA_NUM_PREDICT"), 450)
 
-    GRADIO_SERVER_NAME: str = os.getenv("GRADIO_SERVER_NAME", "0.0.0.0")
-    GRADIO_SERVER_PORT: int = _parse_int(os.getenv("GRADIO_SERVER_PORT"), 7860)
-    GRADIO_SHARE: bool = _parse_bool(os.getenv("GRADIO_SHARE"), False)
-    # Limita i worker Gradio per evitare encode concorrenti che saturano la CPU
-    GRADIO_MAX_THREADS: int = _parse_int(os.getenv("GRADIO_MAX_THREADS"), 4)
+    SERVER_HOST: str = os.getenv("SERVER_HOST", "0.0.0.0")
+    SERVER_PORT: int = _parse_int(os.getenv("SERVER_PORT"), 7860)
 
     # Numero di thread PyTorch/numpy: applicato esplicitamente al bootstrap
     CPU_THREADS: int = _parse_int(os.getenv("CPU_THREADS"), 2)
@@ -104,4 +101,3 @@ class Config:
         self.OLLAMA_NUM_PREDICT = max(64, self.OLLAMA_NUM_PREDICT)
         self.CPU_THREADS = max(1, self.CPU_THREADS)
         self.EMBEDDING_BATCH_SIZE = max(1, self.EMBEDDING_BATCH_SIZE)
-        self.GRADIO_MAX_THREADS = max(1, self.GRADIO_MAX_THREADS)
