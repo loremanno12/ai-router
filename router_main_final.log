@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/tmp/cc-agent/67344402/project/router_main.py", line 16, in <module>
-    from cache import ModelCache
-  File "/tmp/cc-agent/67344402/project/cache.py", line 11, in <module>
-    from sentence_transformers import SentenceTransformer
-ModuleNotFoundError: No module named 'sentence_transformers'
