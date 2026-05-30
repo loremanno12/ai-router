@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Header from "./ai-router/Header";
+import { useState } from "react";
+import { Header } from "./ai-router/Header";
 import PromptInput from "./ai-router/PromptInput";
 import OptimizedPrompt from "./ai-router/OptimizedPrompt";
 import RoutingResult from "./ai-router/RoutingResult";
@@ -18,18 +18,28 @@ export default function AIRouter() {
   const handleOptimize = async () => {
     if (!prompt.trim()) return;
     setIsOptimizing(true);
-    const result = await optimizePrompt(prompt);
-    setOptimizedPrompt(result);
-    setIsOptimizing(false);
+    try {
+      const result = await optimizePrompt(prompt);
+      setOptimizedPrompt(result);
+    } catch (error) {
+      console.error("Optimization failed:", error);
+    } finally {
+      setIsOptimizing(false);
+    }
   };
 
   const handleRoute = async () => {
     const activePrompt = optimizedPrompt || prompt;
     if (!activePrompt.trim()) return;
     setIsRouting(true);
-    const result = await routePrompt(activePrompt);
-    setRoutingResult(result);
-    setIsRouting(false);
+    try {
+      const result = await routePrompt(activePrompt);
+      setRoutingResult(result);
+    } catch (error) {
+      console.error("Routing failed:", error);
+    } finally {
+      setIsRouting(false);
+    }
   };
 
   const handleCopy = (text) => {
