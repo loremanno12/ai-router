@@ -1,0 +1,593 @@
+[
+  {
+    "id": "claude-4-opus",
+    "name": "Claude 4 Opus",
+    "description": "Advanced reasoning model specialized in philosophy, complex analysis, and nuanced creative tasks",
+    "domain": [
+      "philosophy",
+      "analysis",
+      "creative"
+    ],
+    "strengths": [
+      "philosophical reasoning",
+      "complex analysis",
+      "ethical reasoning",
+      "academic writing",
+      "multidisciplinary synthesis"
+    ],
+    "keywords": [
+      "philosophy",
+      "ethics",
+      "reasoning",
+      "analysis",
+      "critique",
+      "filosofia",
+      "etica",
+      "ragionamento",
+      "analisi",
+      "critica"
+    ],
+    "boost_patterns": [
+      "\\b(analizz|confronta|esamina|discuti|critica)\\b",
+      "\\b(filosof|etic|moral|polit)\\b",
+      "\\b(Kant|Nietzsche|Heidegger|Foucault|Sartre)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 99
+  },
+  {
+    "id": "gpt-5-thinking",
+    "name": "GPT-5 Thinking",
+    "description": "Advanced reasoning model with enhanced thinking capabilities for complex problem-solving",
+    "domain": [
+      "reasoning",
+      "analysis",
+      "code"
+    ],
+    "strengths": [
+      "complex reasoning",
+      "analytical thinking",
+      "code generation",
+      "problem decomposition",
+      "structured thinking"
+    ],
+    "keywords": [
+      "reasoning",
+      "thinking",
+      "analysis",
+      "problem",
+      "solve",
+      "ragionamento",
+      "pensiero",
+      "analisi",
+      "problema",
+      "risolvi"
+    ],
+    "boost_patterns": [
+      "\\b(think|reason|analyz|solve|problema)\\b",
+      "\\b(pensa|ragiona|analizz|risolvi)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 98
+  },
+  {
+    "id": "perplexity-sonar-pro",
+    "name": "Perplexity Sonar Pro",
+    "description": "Search-augmented model specialized in real-time information retrieval and analysis",
+    "domain": [
+      "search",
+      "analysis",
+      "code"
+    ],
+    "strengths": [
+      "real-time search",
+      "information retrieval",
+      "fact-checking",
+      "current events",
+      "research synthesis"
+    ],
+    "keywords": [
+      "search",
+      "find",
+      "current",
+      "latest",
+      "research",
+      "cerca",
+      "trova",
+      "attuale",
+      "recente",
+      "ricerca"
+    ],
+    "boost_patterns": [
+      "\\b(search|find|current|latest|recent)\\b",
+      "\\b(cerca|trova|attuale|recente|novità)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  },
+  {
+    "id": "deepseek-coder-v3",
+    "name": "DeepSeek Coder v3",
+    "description": "Code-specialized model for programming, debugging, and technical implementation",
+    "domain": [
+      "code",
+      "technical"
+    ],
+    "strengths": [
+      "code generation",
+      "debugging",
+      "API implementation",
+      "algorithm design",
+      "code optimization"
+    ],
+    "keywords": [
+      "code",
+      "programming",
+      "debug",
+      "function",
+      "API",
+      "codice",
+      "programmazione",
+      "debug",
+      "funzione",
+      "algoritmo"
+    ],
+    "boost_patterns": [
+      "\\b(coder|programma|funzion|debug|API|codice)\\b",
+      "\\b(implementa|scrivi.*codice|ottimizza)\\b",
+      "\\b(function|class|method|variable|loop)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 95
+  },
+  {
+    "id": "qwen-3-72b-instruct",
+    "name": "Qwen 3 72B Instruct",
+    "description": "Large-scale instruction-following model with strong multilingual capabilities",
+    "domain": [
+      "general",
+      "code",
+      "philosophy",
+      "math"
+    ],
+    "strengths": [
+      "multilingual tasks",
+      "instruction following",
+      "code generation",
+      "philosophical reasoning",
+      "mathematical problems"
+    ],
+    "keywords": [
+      "general",
+      "multilingual",
+      "instruction",
+      "diverse",
+      "generale",
+      "multilingue",
+      "istruzione",
+      "vario"
+    ],
+    "boost_patterns": [
+      "\\b(traduci|converti|spiega|descrivi)\\b",
+      "\\b(translate|convert|explain|describe)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  },
+  {
+    "id": "gemini-3-pro",
+    "name": "Gemini 3 Pro",
+    "description": "Multimodal AI with strong capabilities in reasoning, creativity, and music generation",
+    "domain": [
+      "multimodal",
+      "reasoning",
+      "creative",
+      "music"
+    ],
+    "strengths": [
+      "multimodal understanding",
+      "creative generation",
+      "music composition",
+      "visual reasoning",
+      "complex analysis"
+    ],
+    "keywords": [
+      "multimodal",
+      "creative",
+      "music",
+      "visual",
+      "audio",
+      "multimodale",
+      "creatività",
+      "musica",
+      "visuale",
+      "audio"
+    ],
+    "boost_patterns": [
+      "\\b(multimodal|music|audio|visual|creative)\\b",
+      "\\b(musica|audio|visivo|creativo|componi)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  },
+  {
+    "id": "llama-4-behemoth",
+    "name": "Llama 4 Behemoth",
+    "description": "Massive scale model for creative and generative tasks requiring deep context",
+    "domain": [
+      "creative",
+      "generation"
+    ],
+    "strengths": [
+      "creative writing",
+      "story generation",
+      "long-form content",
+      "imaginative tasks",
+      "world-building"
+    ],
+    "keywords": [
+      "creative",
+      "story",
+      "generate",
+      "imagine",
+      "create",
+      "creativo",
+      "storia",
+      "genera",
+      "immagina",
+      "crea"
+    ],
+    "boost_patterns": [
+      "\\b(crea|scrivi|genera|inventa|immagina)\\b",
+      "\\b(create|write|generate|invent|imagine)\\b",
+      "\\b(storia|racconto|narrazione)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 100
+  },
+  {
+    "id": "grok-3",
+    "name": "Grok 3",
+    "description": "Witty and unconventional model with a focus on creative analysis and humor",
+    "domain": [
+      "creative",
+      "analysis",
+      "music"
+    ],
+    "strengths": [
+      "witty responses",
+      "unconventional thinking",
+      "creative analysis",
+      "humor generation",
+      "music understanding"
+    ],
+    "keywords": [
+      "witty",
+      "unconventional",
+      "humor",
+      "creative",
+      "fun",
+      "arguto",
+      "non convenzionale",
+      "umorismo",
+      "creativo",
+      "divertente"
+    ],
+    "boost_patterns": [
+      "\\b(grok|witty|unusual|unconventional)\\b",
+      "\\b(divertente|umorismo|originale|strano)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  },
+  {
+    "id": "codellama-100b",
+    "name": "CodeLlama 100B",
+    "description": "Large-scale code generation model for complex programming tasks",
+    "domain": [
+      "code",
+      "technical"
+    ],
+    "strengths": [
+      "large codebases",
+      "complex algorithms",
+      "code generation",
+      "refactoring",
+      "architecture"
+    ],
+    "keywords": [
+      "code",
+      "programming",
+      "algorithm",
+      "architecture",
+      "refactor",
+      "codice",
+      "programmazione",
+      "algoritmo",
+      "architettura",
+      "refactoring"
+    ],
+    "boost_patterns": [
+      "\\b(code|algorithm|architecture|refactor|implement)\\b",
+      "\\b(codice|algoritmo|architettura|implementa)\\b",
+      "\\b(large|complex|scale|system)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 99
+  },
+  {
+    "id": "qwen-math-v3",
+    "name": "Qwen Math v3",
+    "description": "Mathematical reasoning and problem-solving specialist",
+    "domain": [
+      "math",
+      "reasoning"
+    ],
+    "strengths": [
+      "mathematical proofs",
+      "equation solving",
+      "quantitative analysis",
+      "formal logic",
+      "statistical analysis"
+    ],
+    "keywords": [
+      "math",
+      "equation",
+      "formula",
+      "solve",
+      "proof",
+      "calculate",
+      "matematica",
+      "equazione",
+      "formula",
+      "risolvi",
+      "dimostra",
+      "calcola"
+    ],
+    "boost_patterns": [
+      "\\b(matematica|equazion|formula|risolvi|calcola|dimostra)\\b",
+      "\\b(math|equation|formula|solve|calculate|prove)\\b",
+      "\\b(numero|number|quantità|quantity)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 100
+  },
+  {
+    "id": "llama-4-maverick",
+    "name": "Llama 4 Maverick",
+    "description": "Unconventional and innovative model for creative coding and novel solutions",
+    "domain": [
+      "code",
+      "creative"
+    ],
+    "strengths": [
+      "innovative solutions",
+      "creative coding",
+      "unconventional approaches",
+      "experimental code",
+      "novel implementations"
+    ],
+    "keywords": [
+      "innovative",
+      "unconventional",
+      "creative",
+      "experimental",
+      "innovativo",
+      "non convenzionale",
+      "creativo",
+      "sperimentale"
+    ],
+    "boost_patterns": [
+      "\\b(maverick|innovative|unconventional|novel)\\b",
+      "\\b(innovativo|nuovo|originale|sperimentale)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 98
+  },
+  {
+    "id": "character-ai-pro",
+    "name": "Character AI Pro",
+    "description": "Persona-based model specialized in role-playing and character-driven interactions",
+    "domain": [
+      "creative",
+      "role-play",
+      "philosophy"
+    ],
+    "strengths": [
+      "character role-play",
+      "persona simulation",
+      "creative dialogue",
+      "immersive storytelling",
+      "philosophical dialogues"
+    ],
+    "keywords": [
+      "character",
+      "role",
+      "persona",
+      "dialogue",
+      "story",
+      "personaggio",
+      "ruolo",
+      "dialogo",
+      "storia",
+      "interpreta"
+    ],
+    "boost_patterns": [
+      "\\b(character|role|persona|dialogue|play)\\b",
+      "\\b(personaggio|ruolo|dialogo|interpreta)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  },
+  {
+    "id": "codellama-70b",
+    "name": "CodeLlama 70B",
+    "description": "Efficient code generation model for standard programming tasks",
+    "domain": [
+      "code",
+      "technical"
+    ],
+    "strengths": [
+      "efficient coding",
+      "standard implementations",
+      "code completion",
+      "debugging",
+      "function generation"
+    ],
+    "keywords": [
+      "code",
+      "function",
+      "debug",
+      "implement",
+      "efficient",
+      "codice",
+      "funzione",
+      "debug",
+      "implementa",
+      "efficiente"
+    ],
+    "boost_patterns": [
+      "\\b(codellama|code|function|debug|implement)\\b",
+      "\\b(codice|funzione|implementa)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 98
+  },
+  {
+    "id": "grok-2-music",
+    "name": "Grok 2 Music",
+    "description": "Music generation and audio production specialist",
+    "domain": [
+      "music",
+      "creative"
+    ],
+    "strengths": [
+      "music composition",
+      "lyrics generation",
+      "audio production",
+      "music theory",
+      "song creation"
+    ],
+    "keywords": [
+      "music",
+      "song",
+      "melody",
+      "lyrics",
+      "audio",
+      "composition",
+      "musica",
+      "canzone",
+      "melodia",
+      "testo",
+      "audio",
+      "composizione"
+    ],
+    "boost_patterns": [
+      "\\b(music|canzone|melodia|audio|componi|song)\\b",
+      "\\b(musica|testo|brano|riff|accord)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 98
+  },
+  {
+    "id": "mistral-medium",
+    "name": "Mistral Medium",
+    "description": "Balanced model for general-purpose tasks with strong code capabilities",
+    "domain": [
+      "general",
+      "code",
+      "creative"
+    ],
+    "strengths": [
+      "balanced performance",
+      "general tasks",
+      "code generation",
+      "creative writing",
+      "efficient inference"
+    ],
+    "keywords": [
+      "general",
+      "balanced",
+      "efficient",
+      "versatile",
+      "generale",
+      "bilanciato",
+      "efficiente",
+      "versatile"
+    ],
+    "boost_patterns": [
+      "\\b(mistral|general|versatile|balanced)\\b",
+      "\\b(generale|bilanciato|versatile)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  },
+  {
+    "id": "chatgpt-4o",
+    "name": "ChatGPT-4o",
+    "description": "Optimized GPT-4 variant with enhanced speed for general and creative tasks",
+    "domain": [
+      "general",
+      "creative",
+      "code"
+    ],
+    "strengths": [
+      "fast inference",
+      "general tasks",
+      "creative writing",
+      "code generation",
+      "conversational AI"
+    ],
+    "keywords": [
+      "chatgpt",
+      "fast",
+      "general",
+      "creative",
+      "conversational",
+      "conversazione",
+      "generale",
+      "creativo",
+      "veloce"
+    ],
+    "boost_patterns": [
+      "\\b(chatgpt|gpt-4|optimized)\\b",
+      "\\b(conversazione|dialogo|generale)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 98
+  },
+  {
+    "id": "qwen-3-coder-max",
+    "name": "Qwen 3 Coder Max",
+    "description": "Maximum performance code model for demanding programming tasks",
+    "domain": [
+      "code",
+      "technical"
+    ],
+    "strengths": [
+      "maximum performance",
+      "complex codebases",
+      "architecture design",
+      "optimization",
+      "algorithm design"
+    ],
+    "keywords": [
+      "coder",
+      "max",
+      "performance",
+      "complex",
+      "optimization",
+      "codice",
+      "massimo",
+      "prestazioni",
+      "complesso",
+      "ottimizzazione"
+    ],
+    "boost_patterns": [
+      "\\b(coder.*max|maximum|complex|optimize)\\b",
+      "\\b(massimo|complesso|ottimizza|performance)\\b"
+    ],
+    "training_data_file": "training_data.json",
+    "prompt_count": 97
+  }
+]
