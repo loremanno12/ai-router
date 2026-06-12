@@ -1,0 +1,107 @@
+[
+  {
+    "name": "code_boost",
+    "description": "Boost per prompt che contengono terminologia di programmazione",
+    "models": ["deepseek-coder-v3", "codellama-100b", "codellama-70b", "qwen-3-coder-max", "llama-4-maverick"],
+    "patterns": [
+      "(?i)\\b(code|coding|program|function|debug|API|algorithm|implement)\\b",
+      "(?i)\\b(codice|programma|funzione|debug|algoritmo|implementa)\\b",
+      "(?i)\\b(class|def|var|let|const|import|export)\\b"
+    ],
+    "boost_factor": 0.15,
+    "reason": "contains programming terminology"
+  },
+  {
+    "name": "math_boost",
+    "description": "Boost per prompt matematici",
+    "models": ["qwen-math-v3", "qwen-3-72b-instruct"],
+    "patterns": [
+      "(?i)\\b(math|mathematics|equation|formula|solve|calculate|proof)\\b",
+      "(?i)\\b(matematica|equazione|formula|risolvi|calcola|dimostra)\\b",
+      "(?i)\\b(integral|derivative|theorem|algebra|geometry)\\b"
+    ],
+    "boost_factor": 0.15,
+    "reason": "contains mathematical terminology"
+  },
+  {
+    "name": "philosophy_boost",
+    "description": "Boost per prompt filosofici",
+    "models": ["claude-4-opus", "gpt-5-thinking", "character-ai-pro"],
+    "patterns": [
+      "(?i)\\b(philosophy|ethics|moral|political|existential)\\b",
+      "(?i)\\b(filosofi[a]|etica|morale|politica|esistenziale)\\b",
+      "(?i)\\b(Kant|Nietzsche|Heidegger|Foucault|Sartre|Hegel|Marx)\\b"
+    ],
+    "boost_factor": 0.20,
+    "reason": "contains philosophical concepts"
+  },
+  {
+    "name": "music_boost",
+    "description": "Boost per prompt musicali",
+    "models": ["grok-2-music", "gemini-3-pro"],
+    "patterns": [
+      "(?i)\\b(music|song|melody|lyrics|audio|composition|chord)\\b",
+      "(?i)\\b(musica|canzone|melodia|testo|audio|composizione|accordo)\\b"
+    ],
+    "boost_factor": 0.20,
+    "reason": "contains music-related terms"
+  },
+  {
+    "name": "creative_boost",
+    "description": "Boost per prompt creativi",
+    "models": ["llama-4-behemoth", "grok-3", "chatgpt-4o", "gemini-3-pro"],
+    "patterns": [
+      "(?i)\\b(create|write|generate|imagine|story|narrative)\\b",
+      "(?i)\\b(crea|scrivi|genera|immagina|storia|narrazione)\\b",
+      "(?i)\\b(poem|poetry|fiction|tale|novel)\\b"
+    ],
+    "boost_factor": 0.12,
+    "reason": "requires creative generation"
+  },
+  {
+    "name": "analysis_boost",
+    "description": "Boost per prompt di analisi complessa",
+    "models": ["claude-4-opus", "gpt-5-thinking", "perplexity-sonar-pro", "gemini-3-pro"],
+    "patterns": [
+      "(?i)\\b(analyze|compare|examine|discuss|critique|evaluate)\\b",
+      "(?i)\\b(analizza|confronta|esamina|discuti|critica|valuta)\\b"
+    ],
+    "boost_factor": 0.12,
+    "reason": "requires analytical reasoning"
+  },
+  {
+    "name": "search_boost",
+    "description": "Boost per prompt che richiedono informazioni attuali",
+    "models": ["perplexity-sonar-pro", "chatgpt-4o"],
+    "patterns": [
+      "(?i)\\b(current|latest|recent|news|today|now|find|search)\\b",
+      "(?i)\\b(attuale|recente|notizie|oggi|ora|trova|cerca)\\b"
+    ],
+    "boost_factor": 0.15,
+    "reason": "requires current information"
+  },
+  {
+    "name": "spiegazioni_boost",
+    "description": "Boost per prompt che richiedono spiegazioni dettagliate",
+    "models": ["claude-4-opus", "gpt-5-thinking", "perplexity-sonar-pro"],
+    "patterns": [
+      "(?i)\\b(explain|spiega|clarify|chiarire|elaborate|illustra|come funziona|how it works)\\b",
+      "(?i)\\b(detailed explanation|spiegazione dettagliata|step-by-step|passo dopo passo)\\b",
+      "(?i)\\b(beginner|novice|easy to understand|facile da capire)\\b"
+    ],
+    "boost_factor": 0.18,
+    "reason": "requires clear explanations and educational content"
+  },
+  {
+    "name": "roleplay_boost",
+    "description": "Boost per prompt che richiedono roleplay e character interaction",
+    "models": ["llama-4-behemoth", "grok-3", "character-ai-pro", "chatgpt-4o"],
+    "patterns": [
+      "(?i)\\b(role-?play|roleplay|character|persona|pretend|assume the role|metti i panni)\\b",
+      "(?i)\\b(as if|come se|imagine you are|immagina di essere|be a|sei un)\\b",
+      "(?i)\\b(dialogue|dialog|conversation|script|conversazione)\\b"
+    ],
+    "boost_factor": 0.16,
+    "reason": "requires character-driven and conversational responses"
+  }
+]

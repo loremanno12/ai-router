@@ -1,0 +1,10 @@
+--index-url https://download.pytorch.org/whl/cpu
+torch
+--index-url https://pypi.org/simple
+ftfy
+nicegui
+numpy
+python-dotenv
+Requests
+scikit_learn
+sentence_transformers
